@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy - Su Socio de Confianza en Soluciones de Tecnología Médica</title>
+    <style>
+        /* Estilos de reinicio y base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Estilos del encabezado */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        /* Sección hero */
+        .hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Estilos de sección */
+        section {
+            padding: 4rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+        }
+        /* Productos y Servicios */
+        .product-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .product-tabs button {
+            background-color: #f4f4f4;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+        .product-tabs button.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .product-content {
+            display: none;
+        }
+        .product-content.active {
+            display: block;
+        }
+        /* Formulario de contacto */
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        /* Botón de WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Synergy</h1>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#products">Productos y Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenido a Synergy</h1>
+                <p>Su Socio de Confianza en Soluciones de Tecnología Médica</p>
+                <a href="#contact" class="btn">Conozca Más</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Misión</h3>
+                        <p>Proporcionar soluciones de tecnología médica de vanguardia que mejoren la atención al paciente y la eficiencia en el cuidado de la salud.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Visión</h3>
+                        <p>Ser el proveedor líder de soluciones innovadoras de tecnología médica en nuestra región.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Nuestra Historia</h3>
+                        <p>Fundada en 2005, Synergy ha estado a la vanguardia de la tecnología médica durante más de 18 años, entregando consistentemente soluciones innovadoras a los proveedores de atención médica.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Propuesta de Valor</h3>
+                        <p>Ofrecemos experiencia sin igual, tecnología de punta y servicio al cliente excepcional para satisfacer todas sus necesidades de equipos médicos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+                <h2>Productos y Servicios</h2>
+                <div class="product-tabs">
+                    <button class="active" data-tab="it">Soluciones TI</button>
+                    <button data-tab="ups">Sistemas UPS</button>
+                    <button data-tab="other">Otros Productos</button>
+                </div>
+                <div class="product-content active" id="it">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Software de Imágenes Médicas</h3>
+                            <img src="/src/placeholder.svg" alt="Software de Imágenes Médicas" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Software avanzado para el procesamiento y análisis de imágenes médicas con diagnóstico asistido por IA.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Registros Electrónicos de Salud</h3>
+                            <img src="/src/placeholder.svg" alt="Registros Electrónicos de Salud" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Sistema integral de HCE para una gestión eficiente de datos de pacientes y una mejor coordinación de la atención.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Plataforma de Telemedicina</h3>
+                            <img src="/src/placeholder.svg" alt="Plataforma de Telemedicina" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Solución segura de videoconferencia y monitoreo remoto de pacientes para la prestación de atención médica virtual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content" id="ups">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>UPS de Grado Médico</h3>
+                            <img src="/src/placeholder.svg" alt="UPS de Grado Médico" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Sistemas de alimentación ininterrumpida confiables diseñados específicamente para equipos médicos.</p>
+                        </div>
+                        <div class="card">
+                            <h3>UPS Modular</h3>
+                            <img src="/src/placeholder.svg" alt="UPS Modular" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Soluciones UPS escalables para instalaciones sanitarias en crecimiento con requisitos de energía variables.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Sistema de Monitoreo de Baterías</h3>
+                            <img src="/src/placeholder.svg" alt="Sistema de Monitoreo de Baterías" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Sistema avanzado de monitoreo y gestión de baterías UPS para garantizar un rendimiento óptimo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content" id="other">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Carros Médicos</h3>
+                            <img src="/src/placeholder.svg" alt="Carros Médicos" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Carros médicos ergonómicos y móviles para una prestación eficiente de servicios en el punto de atención.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Monitores de Pacientes</h3>
+                            <img src="/src/placeholder.svg" alt="Monitores de Pacientes" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Sistemas de monitoreo de pacientes de alta calidad para un seguimiento preciso y continuo de los signos vitales.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Lámparas Quirúrgicas</h3>
+                            <img src="/src/placeholder.svg" alt="Lámparas Quirúrgicas" style="width:100%;height:200px;object-fit:cover;margin-bottom:1rem;">
+                            <p>Soluciones avanzadas de iluminación quirúrgica LED para una visibilidad óptima durante los procedimientos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Portal del Paciente</h3>
+                        <p>Acceda a sus registros médicos, programe citas y comuníquese con sus proveedores de atención médica de forma segura.</p>
+                        <a href="#" class="btn">Acceder al Portal</a>
+                    </div>
+                    <div class="card">
+                        <h3>Sistemas PACS</h3>
+                        <p>Sistemas de Archivo y Comunicación de Imágenes de última generación para una gestión eficiente de imágenes médicas.</p>
+                        <a href="#" class="btn">Más Información</a>
+                    </div>
+                    <div class="card">
+                        <h3>Mantenimiento de Equipos Médicos</h3>
+                        <p>Servicios integrales de mantenimiento preventivo y correctivo para todo tipo de equipos médicos.</p>
+                        <a href="#" class="btn">Programar Servicio</a>
+                    </div>
+                    <div class="card">
+                        <h3>Imágenes Médicas</h3>
+                        <p>Soluciones avanzadas de imágenes médicas para un diagnóstico preciso y planificación del tratamiento.</p>
+                        <a href="#" class="btn">Explorar Servicios</a>
+                    </div>
+                    <div class="card">
+                        <h3>Laboratorio Clínico</h3>
+                        <p>Servicios de laboratorio clínico de vanguardia para resultados de pruebas precisos y oportunos.</p>
+                        <a href="#" class="btn">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Póngase en Contacto</h3>
+                        <form>
+                            <input type="text" placeholder="Su Nombre" required>
+                            <input type="email" placeholder="Su Correo Electrónico" required>
+                            <input type="text" placeholder="Asunto" required>
+                            <textarea placeholder="Su Mensaje" rows="4" required></textarea>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    <div class="card">
+                        <h3>Información de Contacto</h3>
+                        <p>Teléfono: +1 234 567 890</p>
+                        
+                        <p>Correo: contacto@synergy.com</p>
+                        <p>WhatsApp: +1 234 567 890</p>
+                        <h4>Ubicación</h4>
+                        <p>Calle Negocio 123, Ciudad, País</p>
+                        <h4>Redes Sociales</h4>
+                        <div>
+                            <a href="#" aria-label="Facebook">Facebook</a>
+                            <a href="#" aria-label="Twitter">Twitter</a>
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Synergy. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+            </nav>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chatear en WhatsApp">
+        WhatsApp
+    </a>
+
+    <script>
+        // Funcionalidad simple de pestañas
+        document.querySelectorAll('.product-tabs button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.product-tabs button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.product-content').forEach(content => content.classList.remove('active'));
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
